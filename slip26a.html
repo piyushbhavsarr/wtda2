@@ -1,0 +1,32 @@
+<html>
+    <head>
+<form id="employee-form">
+    <label for="employee-name">Employee Name:</label>
+    <input type="text" id="employee-name" name="ename"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</head>
+<body>
+  
+  <div id="employee-details"></div>
+  
+  <script>
+  document.getElementById("employee-form").addEventListener("submit", function(event) {
+    // Prevent the form from being submitted normally
+    event.preventDefault();
+  
+    var ename = document.getElementById("employee-name").value;
+  
+    // Send an AJAX request to the server
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("employee-details").innerHTML = this.responseText;
+      }
+    };
+    xhr.open("GET", "get_employee_details.php?ename=" + ename);
+    xhr.send();
+  });
+  </script>
+  </body>
+  </html>

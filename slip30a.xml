@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bookstore>
+    <Category name="Yoga">
+        <Book>
+            <Book_Title>Light on Yoga</Book_Title>
+            <Book_Author>B.K.S. Iyengar</Book_Author>
+            <Book_Price>12.99</Book_Price>
+        </Book>
+    </Category>
+    <Category name="Story">
+        <Book>
+            <Book_Title>The Alchemist</Book_Title>
+            <Book_Author>Paulo Coelho</Book_Author>
+            <Book_Price>10.99</Book_Price>
+        </Book>
+    </Category>
+    <Category name="Technical">
+        <Book>
+            <Book_Title>The Pragmatic Programmer</Book_Title>
+            <Book_Author>Andrew Hunt and David Thomas</Book_Author>
+            <Book_Price>34.99</Book_Price>
+        </Book>
+    </Category>
+</Bookstore>
