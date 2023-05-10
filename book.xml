@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <book id="101">
+    <title>PHP and MySQL Web Development</title>
+    <author>Luke Welling, Laura Thomson</author>
+    <price>31.98</price>
+    <publisher>Sams Publishing</publisher>
+  </book>
+  <book id="102">
+    <title>JavaScript and jQuery: Interactive Front-End Web Development</title>
+    <author>Jon Duckett</author>
+    <price>23.09</price>
+    <publisher>Wiley</publisher>
+  </book>
+  <book id="103">
+    <title>HTML and CSS: Design and Build Websites</title>
+    <author>Jon Duckett</author>
+    <price>19.99</price>
+    <publisher>Wiley</publisher>
+  </book>
+  <book id="104">
+    <title>Learning Python, 5th Edition</title>
+    <author>Mark Lutz</author>
+    <price>52.47</price>
+    <publisher>O'Reilly Media</publisher>
+  </book>
+  <book id="105">
+    <title>Head First Java, 2nd Edition</title>
+    <author>Kathy Sierra, Bert Bates</author>
+    <price>39.99</price>
+    <publisher>O'Reilly Media</publisher>
+  </book>
+</library>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Name</title>
+</head>
+<body onload="hideImage()">
+    <label for="student-name">Student Name:</label>
+    <input type="text" id="student-name" onblur="checkName()" onclick="showImage()"><br><br>
+
+    <img id="my-image" src="https://picsum.photos/100" onmouseover="enlargeImage()" onmouseup="shrinkImage()">
+
+    <script>
+        function checkName() {
+            var studentName = document.getElementById("student-name").value;
+            if(studentName) {
+                document.getElementById("student-name").style.color = "red";
+                document.getElementById("student-name").style.fontSize = "18px";
+            }
+        }
+
+        function hideImage() {
+            document.getElementById("my-image").style.display = "none";
+        }
+
+        function showImage() {
+            var studentName = document.getElementById("student-name").value;
+            if(!studentName) {
+                document.getElementById("my-image").style.display = "block";
+            }
+        }
+
+        function enlargeImage() {
+            document.getElementById("my-image").style.width = "300px";
+        }
+
+        function shrinkImage() {
+            document.getElementById("my-image").style.width = "200px";
+        }
+    </script>
+</body>
+</html>

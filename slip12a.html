@@ -1,0 +1,29 @@
+a1 -wt
+<html>
+<form action="slip12a.php" method="POST">
+
+<head>
+<script type="text/javascript">
+function print1()
+{
+    ob=new XMLHttpRequest();
+    ob.open("POST","a1.php",true);
+    ob.send();
+    ob.onreadystatechange=function()
+    {
+       if(ob.readyState==4 && ob.status==200)
+       {
+          document.getElementById("i").innerHTML=ob.responseText;
+       }
+    }
+}
+</script>
+</head>
+
+<body>
+<h3>Display the content of contact.dat file</h3>
+<br> <input type="submit" value='submit' >
+<span id="i"></span>
+</body>
+</html>    
+

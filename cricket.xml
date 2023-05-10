@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<CricketTeam>
+  <Team country="Australia">
+    <player>____</player>
+    <runs>______</runs>
+    <wicket>____</wicket>
+  </Team>
+<Team country="India"><player>____</player><runs>______</runs><wicket>____</wicket></Team></CricketTeam>
