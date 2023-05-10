@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <roll_no>1</roll_no>
+        <name>John Doe</name>
+        <address>123 Main St</address>
+        <college>XYZ College</college>
+        <course>Computer Science</course>
+    </student>
+    <student>
+        <roll_no>2</roll_no>
+        <name>Jane Smith</name>
+        <address>456 Elm St</address>
+        <college>ABC College</college>
+        <course>Mathematics</course>
+    </student>
+    <student>
+        <roll_no>3</roll_no>
+        <name>Bob Johnson</name>
+        <address>789 Oak St</address>
+        <college>MNO College</college>
+        <course>Biology</course>
+    </student>
+    <student>
+        <roll_no>4</roll_no>
+        <name>Alice Williams</name>
+        <address>321 Pine St</address>
+        <college>PQR College</college>
+        <course>Chemistry</course>
+    </student>
+    <student>
+        <roll_no>5</roll_no>
+        <name>Charlie Brown</name>
+        <address>654 Maple St</address>
+        <college>STU College</college>
+        <course>Physics</course>
+    </student>
+    
+</students>

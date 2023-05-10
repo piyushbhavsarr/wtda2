@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teacher Details</title>
+</head>
+<body>
+  <h1>Teacher Details</h1>
+  <select id="teachers" onchange="showTeacherDetails(this.value)">
+    <option value="">Select a teacher:</option>
+    <option value="1">John Doe</option>
+    <option value="2">Jane Smith</option>
+  </select>
+  <div id="output"></div>
+
+  <script>
+    function showTeacherDetails(teacherId) {
+      if (teacherId == "") {
+        document.getElementById("output").innerHTML = "";
+        return;
+      }
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("output").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "slip14a.php?teacherId=" + teacherId, true);
+      xhttp.send();
+    }
+  </script>
+</body>
+</html>

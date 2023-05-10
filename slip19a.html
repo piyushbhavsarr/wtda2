@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Form Validate</title>
+    </head>
+    <body>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            function validateForm()
+            {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+                if(username == "")
+                {
+                    alert("Username must be filled out");
+                    return false;
+                }
+                if(username == "")
+                {
+                    alert("Password must be filled out");
+                    return false;
+                }
+                if(username != "username" && password !="password" )
+                {
+                    alert("Wrong Credentials");
+                }
+                else{
+                    alert("Successfull!!!");
+                }
+                return true;
+            }
+        </script>
+
+    </body>
+</html>
